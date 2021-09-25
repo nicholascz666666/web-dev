@@ -64,3 +64,14 @@
 }
 
 
+.wd-D-right{
+    float: right;
+    position: relative;
+    bottom:92px;
+    right: 16px;
+}
+.wd-D-rad{
+    border-radius: 10px;
+}
+
+.wd-color-lg{color: lightgray;}
