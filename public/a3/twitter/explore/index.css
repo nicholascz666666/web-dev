@@ -1,5 +1,5 @@
 .wd-color-white{color: white;}
-
+.wd-boder-left{position: relative; left: 16px;}
 .wd-A-border{
     border-width: 2px;
     border-style: solid;
@@ -60,7 +60,7 @@
     border-style: solid;
     border-width: 2px;
     background: black;
-    border-color: darkgray;
+    border-color: rgb(47, 51, 54);
 }
 
 
@@ -75,3 +75,102 @@
 }
 
 .wd-color-lg{color: lightgray;}
+
+.wd-A2-topic{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 12px;
+    left: 16px;
+}
+
+.wd-A2-handle {
+    color: lightgray;
+    font-size: 13px;
+    position: relative;
+    left: 16px;
+}
+
+.wd-B2-image{
+    border-radius: 60%;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: 12px;
+    left: 16px;
+}
+
+.wd-C2-topic{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: 28px;
+    up: 12px;
+}
+
+.wd-C2-handle{
+    color: lightgray;
+    font-size: 15px;
+    position: relative;
+    left: 28px;
+    up: 12px;
+}
+
+.wd-D2{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    right: 16px;
+    up: 12px;
+    left: 76px;
+    display: inline-block;
+    width: 506px;
+}
+
+.wd-E2{
+    position: relative;
+    up: 12px;
+    left: 76px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.wd-F2{
+    position: relative;
+    up: 12px;
+    left: 76px;
+    color: white;
+    font-size: 15px;
+}
+.wd-F2-text{
+    position: relative;
+    up: 12px;
+    left: 76px;
+    color: lightgray;
+    font-size: 15px;
+    display: inline-block;
+    width: 506px;
+}
+
+.wd-EF2-border{
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+.wd-g2-gap{
+    float: left;
+    width: 15%;
+    up: 12px;
+}
+.wd-g2-num{
+    color: lightgray;
+    position: relative;
+    left: 12px;
+    font-size: 24px;
+}
+.wd-color-red{
+    color: red;
+}
