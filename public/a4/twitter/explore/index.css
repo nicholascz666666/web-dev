@@ -5,8 +5,10 @@
     border-style: solid;
     background-color: darkgray;
     border-radius: 20px;
-    position: fixed;
+    position: relative;
     width:85%;
+    position: relative;
+    left: 16px;
 }
 .wd-color-whole-background{
     background-color: black;
@@ -23,9 +25,10 @@
     color: white;
 }
 .wd-A-gear{
-    position: fixed;
-    up:0px;
+    float: right;
+    position: relative;
     right:12px;
+    bottom: 20px;
 }
 .wd-B-FY{
     color: rgb(29,161,242);
@@ -96,7 +99,6 @@
     width: 48px;
     height: 48px;
     position: relative;
-    top: 12px;
     left: 16px;
 }
 
@@ -105,15 +107,20 @@
     font-size: 15px;
     position: relative;
     left: 28px;
-    up: 12px;
+}
+.wd-down-position{
+    position: relative;
+    top: 12px;
 }
 
+.wd-float-left{
+    float: left;
+}
 .wd-C2-handle{
     color: lightgray;
     font-size: 15px;
     position: relative;
     left: 28px;
-    up: 12px;
 }
 
 .wd-D2{
@@ -121,7 +128,6 @@
     font-size: 15px;
     position: relative;
     right: 16px;
-    up: 12px;
     left: 76px;
     display: inline-block;
     width: 506px;
@@ -129,7 +135,7 @@
 
 .wd-E2{
     position: relative;
-    up: 12px;
+    top: 12px;
     left: 76px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -138,14 +144,14 @@
 
 .wd-F2{
     position: relative;
-    up: 12px;
+    top: 12px;
     left: 76px;
     color: white;
     font-size: 15px;
 }
 .wd-F2-text{
     position: relative;
-    up: 12px;
+    top: 12px;
     left: 76px;
     color: lightgray;
     font-size: 15px;
@@ -162,8 +168,7 @@
 }
 .wd-g2-gap{
     float: left;
-    width: 15%;
-    up: 12px;
+    margin-right: 50px;
 }
 .wd-g2-num{
     color: lightgray;
@@ -173,4 +178,19 @@
 }
 .wd-color-red{
     color: red;
+}
+
+.wd-c-dot{
+    float: right;
+    position: relative;
+    right: 12px;
+    color:white;
+}
+
+.wd-c-dot2{
+    float: right;
+    position: relative;
+    right: 12px;
+    color:rgb(110, 118, 125);
+    bottom: 48px;
 }

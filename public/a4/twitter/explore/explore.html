@@ -3,160 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="index.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
-<body class="wd-color-whole-background">
-    <div class="wd-A-border wd-boder-left" >
-    <!-- A -->
-        <image src="search.png" height="18px" width="18px"/>
-        <input class="wd-A-input wd-color-white"
-               type="text" placeholder="Search Twitter" height="18px" width=65%/>
-        <a href="explore-settings.html">
-            <image class="wd-A-gear" src="gear.png" height="18px" width="18px"/>
-        </a>
-    </div><br/><br/>
+<body>
+<div class="wd-top">
+    <div class="row">
+<!-- left-->
+        <div class="wd-left col-sm-1 col-md-1 col-lg-1 col-xl-2 col-xxl-2 ">
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
 
-    <!-- B -->
-    <div class="wd-B-row wd-boder-left">
-        <div class="wd-B-row-gap">
-            <div class="wd-B-pad">
-                <a href="https://www.patatap.com/">
-                    <h2 class="wd-B-FY"> For you</h2>
-                </a>
+                    <li class="list-group-item" >
+                        <i class="fas fa-home wd-left-home"></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Home</span>
+
+                    </li>
+                    <li class="list-group-item active">
+                        <i class="fas fa-hashtag wd-left-home"></i>
+                        <span class="d-none d-xl-block d-xxl-block">Explore</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-bell wd-left-home"></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Notifications</span>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-envelope wd-left-home"></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Messages</span>
+                    </li>
+
+                    <li class="list-group-item ">
+                        <i class="fas fa-bookmark wd-left-home"></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Bookmarks</span>
+                    </li>
+                    <li class="list-group-item ">
+                        <i class="fas fa-list wd-left-home" ></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Lists</span>
+                    </li>
+                    <li class="list-group-item ">
+                        <i class="fas fa-user wd-left-home" ></i>
+                        <span class="d-none d-xl-block d-xxl-block" >Profile</span>
+                    </li>
+                    <li class="list-group-item ">
+                        <i class="fas fa-ellipsis-h wd-left-home" > </i>
+                        <span class="d-none d-xl-block d-xxl-block" >More</span>
+                    </li>
+
+                    <button class="btn btn-primary wd-top override-bs">
+                        Tweet
+                    </button>
+                </ul>
             </div>
         </div>
-        <div class="wd-B-row-gap">
-            <a href="https://www.nytimes.com/interactive/2021/us/massachusetts-covid-cases.html"
-               style="text-decoration:none">
-                <h2 class="wd-B-color"> Trending</h2>
-            </a>
+<!--    mid    -->
+        <div class="col-sm-7 col-md-7 col-lg-7 col-xl-6 col-xxl-6 ">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="input-group mb-3" >
+                        <div class="input-group-text override-bs2 wd-search-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search Twitter"
+                        style="border-top-right-radius: 20px; border-bottom-right-radius: 20px;border-left: 0px">
+
+                    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                        <i class="fas fa-cog fa-2x wd-float-right wd-color-blue"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html">entertainment</a>
+                    </li>
+                </ul>
+
+                <div class="position-relative">
+                    <img src="pz.jpg" class="img-fluid" alt="Responsive image">
+                    <span class="text-over-img position-absolute bottom-0 start-0 wd-txt-over-image">4K Image火烧云</span>
+                </div>
+
+            </div>
+
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                                <h5 class="wd-color-lg">Web Development</h5>
+                                <h5>ReactJS
+                                    <i class="fas fa-check-circle"></i> - 2h
+                                </h5>
+                                <h6>Bootstrap makes it easy to apply professional styles, but sometimes we will need
+                                    override some of the styles declared by Bootstrap. The way to achieve this is by loading
+                                    additional stylesheets after loading the Bootstrap library. To practice with overriding
+                                    Bootstrap styles, copy the HTML and CSS code below to the end of index.html and
+                                    index.css, and save.</h6>
+
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <img src="5g.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                                <h5>JavaScript
+                                    <i class="fas fa-check-circle"></i> - 2h
+                                </h5>
+                                <h6>To practice with overriding
+                                    Bootstrap styles, copy the HTML and CSS code below to the end of index.html and
+                                    index.css, and save.</h6>
+                                <h5 class="wd-color-lg">123k Tweets</h5>
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <img src="pkq.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                                <h5 class="wd-color-lg">Web Development</h5>
+                                <h5 >jQuery</h5>
+                                <h5 class="wd-color-lg">123k Tweets</h5>
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <img src="csgo.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                                <h5 class="wd-color-lg">Web Development</h5>
+                                <h5>NodeJS
+                                    <i class="fas fa-check-circle"></i> - 2h
+                                </h5>
+                                <h5 class="wd-color-lg">123k Tweets</h5>
+                            </div>
+                            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                <img src="d-pic.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
         </div>
-        <div class="wd-B-row-gap">
-            <a href="https://news.northeastern.edu/coronavirus/reopening/testing-dashboard"
-               style="text-decoration:none">
-                <h2 class="wd-B-color"> COVID-19 </h2>
-            </a>
+
+
+
+<!--right-->
+        <div class="wd-right col-sm-0 col-md-0 col-lg-3 col-xl-3 col-xxl-3">
+            <ul class="list-group">
+                <li class="list-group-item">Who to follow</li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <img src="java.png" class="wd-logo">
+                        </div>
+                        <div class="col-lg-8 col-xl-8 col-xxl-8">
+                            <h5>Java <i class="fas fa-check-circle"></i>
+                            </h5>
+                            <span>@Java</span>
+                        </div>
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <button class="btn btn-primary ">
+                                Follow
+                            </button>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <img src="rs.jpg" class="wd-logo">
+                        </div>
+                        <div class="col-lg-8 col-xl-8 col-xxl-8">
+                            <h5>Relativity Space <i class="fas fa-check-circle"></i>
+                            </h5>
+                            <span>@relativityspace</span>
+                        </div>
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <button class="btn btn-primary ">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <img src="vg.png" class="wd-logo">
+                        </div>
+                        <div class="col-lg-8 col-xl-8 col-xxl-8">
+                            <h5>Virgin Galactic <i class="fas fa-check-circle"></i>
+                            </h5>
+                            <span>@virgingalactic</span>
+                        </div>
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <button class="btn btn-primary ">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <img src="nasa.png" class="wd-logo">
+                        </div>
+                        <div class="col-lg-8 col-xl-8 col-xxl-8">
+                            <h5>NASA <i class="fas fa-check-circle"></i>
+                            </h5>
+                            <span>@NASA</span>
+                        </div>
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <button class="btn btn-primary ">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <img src="Tesla.png" class="wd-logo">
+                        </div>
+                        <div class="col-lg-8 col-xl-8 col-xxl-8">
+                            <h5>Tesla <i class="fas fa-check-circle"></i>
+                            </h5>
+                            <span>@Tesla</span>
+                        </div>
+                        <div class="col-lg-1 col-xl-1 col-xxl-1">
+                            <button class="btn btn-primary ">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
         </div>
-        <div class="wd-B-row-gap">
-            <a href="https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en"
-               style="text-decoration:none">
-                <h2 class="wd-B-color " > News </h2>
-            </a>
-        </div>
-        <div class="wd-B-row-gap">
-            <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-               style="text-decoration:none">
-                <h2 class="wd-B-color"> Sports</h2>
-            </a>
-        </div>
-        <div class="wd-B-row-gap">
-            <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB?hl=en-US&gl=US&ceid=US%3Aen"
-               style="text-decoration:none">
-                <h2 class="wd-B-color" > Entertainment</h2>
-            </a>
-        </div>
-        <br/>
     </div>
-    <!--  C  -->
-    <br/><br/>
-    <div class="wd-C-pad ">
-        <span class="wd-B-color wd-boder-left"> Trending in Science </span><br/>
-        <a href="https://www.science.org/content/article/male-seahorses-grow-placentas-incubate-their-young"
-           style="text-decoration:none">
-            <h2 class="wd-color-white wd-boder-left">Male seahorses grow placentas to incubate their young</h2>
-        </a>
-        <p class="wd-B-color wd-boder-left"> 55.5K Tweets</p>
-        <hr/>
-        <p class="wd-B-color wd-boder-left"> Sports ・ Trending in United States </p>
-        <a href="https://www.chinanews.com/ty/2021/08-02/9534715.shtml"
-           style="text-decoration:none">
-            <h2 class="wd-color-white wd-boder-left">致敬老将！谌龙获得东京奥运羽毛球男单亚军</h2>
-        </a>
-        <p class="wd-B-color wd-boder-left"> 999999K Tweets</p>
-    </div>
 
-    <!--  C2  -->
-    <div class="wd-C-pad ">
-        <span class="wd-B-color wd-boder-left"> Trending in Games </span><br/>
-        <a href="https://newzoo.com/insights/rankings/top-20-pc-games/"
-           style="text-decoration:none">
-            <h2 class="wd-color-white wd-boder-left">Most Popular PC Games | Global</h2>
-        </a>
-        <p class="wd-B-color wd-boder-left"> 666K Tweets</p>
-        <hr/>
-        <p class="wd-B-color wd-boder-left"> 双11 ・ 天猫 </p>
-        <a href="https://finance.sina.com.cn/china/gncj/2020-11-12/doc-iiznezxs1359400.shtml"
-           style="text-decoration:none">
-            <h2 class="wd-color-white wd-boder-left">2020年天猫4982亿元成交额创新纪录</h2>
-        </a>
-        <p class="wd-B-color wd-boder-left"> 555555K Tweets</p>
-    </div>
-
-    <!--  D  -->
-    <div class="wd-C-pad">
-        <div class="wd-boder-left">
-            <img src="TNYT.png" width="20px" height="20px" style="vertical-align:middle"/>
-            <span class="wd-color-white">The New York Times</span>
-            <img src="right.jpg" width="20px" height="20px" style="vertical-align:middle"/>
-            <span class="wd-color-white"> ・ Yesterday</span> <br> <br> <br>
-            <a href="https://www.nytimes.com/2021/09/24/dining/restaurant-host-covid-pandemic.html"
-               class="wd-color-white" style="text-decoration:none">
-                The Restaurant Host Is Suddenly at the Front of the Covid Wars</a>
-
-        </div>
-
-        <div class="wd-D-right">
-            <img src="d-pic.jpg" height="100px" width="100px" class="wd-D-rad">
-        </div>
-    </div>
-
-    <!--  D2  -->
-    <div class="wd-C-pad">
-        <div class="wd-boder-left">
-            <img src="TNYT.png" width="20px" height="20px" style="vertical-align:middle"/>
-            <span class="wd-color-white">The New York Times</span>
-            <img src="right.jpg" width="20px" height="20px" style="vertical-align:middle"/>
-            <span class="wd-color-white"> ・ Today</span> <br> <br> <br>
-            <a href="https://www.nytimes.com/2021/09/24/technology/att-5g-race.html"
-               class="wd-color-white" style="text-decoration:none">
-                In Race for 5G, Alarm and Security Services Get Stuck in the Middle</a>
-
-
-        </div>
-
-        <div class="wd-D-right">
-            <img src="5g.jpg" height="100px" width="100px" class="wd-D-rad">
-        </div>
-    </div>
-
-    <!--  E  -->
-    <div class="wd-C-pad">
-        <div class="wd-boder-left">
-        <p class="wd-B-color wd-boder-left">COVID-19 ・ Live </p>
-        <a href="https://news.northeastern.edu/coronavirus/reopening/testing-dashboard"
-           style="text-decoration:none">
-            <h2 class="wd-color-lg wd-boder-left"> NEU-COVID </h2>
-        </a>
-        </div>
-        <div class="wd-D-right">
-            <img src="neu.png" height="100px" width="100px" class="wd-D-rad">
-        </div>
-    </div>
-
-    <!--  E2  -->
-    <div class="wd-C-pad">
-        <div class="wd-boder-left">
-            <p class="wd-B-color wd-boder-left">GAME ・ CSGO </p>
-            <a href="https://blog.counter-strike.net/index.php/2021/09/35546/"
-               style="text-decoration:none">
-                <h2 class="wd-color-lg wd-boder-left"> CSGO UPDATE </h2>
-            </a>
-        </div>
-        <div class="wd-D-right">
-            <img src="csgo.jpg" height="100px" width="100px" class="wd-D-rad">
-        </div>
-    </div>
-
+</div>
 </body>
-
 </html>

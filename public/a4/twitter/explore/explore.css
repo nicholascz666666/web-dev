@@ -1,0 +1,62 @@
+.wd-top {
+    margin-top: 25px;
+}
+
+.btn-primary.override-bs {
+    border-radius: 20px;
+}
+
+
+.input-group-text.override-bs2{
+    background-color: white;
+
+}
+
+.wd-left-home{
+    float: left;
+    position: relative;
+    top:3px;
+}
+
+.wd-float-right{
+    float: right;
+}
+
+.input-group-text.override-bs2.wd-search-icon{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 0px;
+}
+.form-control.override-bar{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 0px;
+}
+
+.wd-color-blue{
+    color: blue;
+}
+
+.wd-txt-over-image{
+    color: white; font-size: 50px;
+}
+.wd-color-lg{
+    color: darkgray;
+}
+.wd-left{
+    position: relative;
+    left: 8px;
+}
+
+.wd-right{
+    position: relative;
+    right: 8px;
+}
+
+.wd-logo{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: 5px;
+    border-radius: 70%;
+}
