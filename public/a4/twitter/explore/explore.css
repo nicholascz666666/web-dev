@@ -27,10 +27,10 @@
     border-bottom-left-radius: 20px;
     border-right: 0px;
 }
-.form-control.override-bar{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-left: 0px;
+.override-searchbar{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px  !important;
+    border-left: 0px  !important;
 }
 
 .wd-color-blue{
@@ -43,15 +43,7 @@
 .wd-color-lg{
     color: darkgray;
 }
-.wd-left{
-    position: relative;
-    left: 8px;
-}
 
-.wd-right{
-    position: relative;
-    right: 8px;
-}
 
 .wd-logo{
     width: 32px;
@@ -59,4 +51,29 @@
     position: relative;
     right: 5px;
     border-radius: 70%;
+}
+
+.wd-left-button{
+    min-width: 100%;
+}
+
+.wd-right-font{
+    font-size: 14px;
+}
+
+.wd-right-bold{
+    font-weight: bold;
+}
+
+.wd-bd-r{
+    border-radius: 10px;
+}
+
+.wd-md-img{
+    height: 100px;
+}
+
+.wd-right-check{
+    position: relative;
+    z-index: 10;
 }
