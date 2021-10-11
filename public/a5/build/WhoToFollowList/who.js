@@ -1,13 +1,15 @@
-export default [
-    {   avatarIcon: 'java.png',
-        userName: 'Java', handle: 'Java', },
-    {   avatarIcon: 'rs.jpg',
-        userName: 'Relativity Space',
-        handle: 'relativityspace', },
-    {   avatarIcon: 'vg.png',
-        userName: 'Virgin Galactic',
-        handle: 'virgingalactic', },
-    {   avatarIcon: 'nasa.png',
-        userName: 'NASA', handle: 'NASA', },
-    {   avatarIcon: 'Tesla.png',
-        userName: 'Tesla', handle: 'Tesla', }, ];
+const who =  [
+    {   icon: '../../java.png',
+        title: 'Java', name: 'Java',},
+    {   icon: '../../rs.jpg',
+        title: 'Relativity Space',
+        name: 'relativityspace',},
+    {   icon: '../../vg.png',
+        title: 'Virgin Galactic',
+        name: 'virgingalactic',},
+    {   icon: '../../nasa.png',
+        title: 'NASA', name: 'NASA',},
+    {   icon: '../../Tela.png',
+        title: 'Tesla', name: 'Tesla'},];
+
+export  default  who;

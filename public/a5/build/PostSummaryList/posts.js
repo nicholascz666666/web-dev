@@ -1,4 +1,4 @@
-export default exploreItems = [
+ const posts = [
     { topic: 'Web Development', userName: 'ReactJS', time: '2h',
         title: 'React.js is a component based front end library that makes it very ' +
             'easy to build Single Page Applications or SPAs', image: '../../twitter/explore/react.png'},
@@ -9,3 +9,6 @@ export default exploreItems = [
         image: '../../twitter/explore/jq.jpg', tweets: '122K', },
     {   topic: 'Web Development', userName: 'NodeJS', title: '', time: 'last month',
         image: '../../twitter/explore/ns.png', tweets: '120K', }, ];
+
+
+ export default posts;
