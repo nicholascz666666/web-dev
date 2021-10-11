@@ -6,7 +6,7 @@ const ExploreComponent = () => {
                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="input-group mb-3" >
                         <div class="input-group-text override-bs2 wd-search-icon">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search wd-color-lg"></i>
                         </div>
                         <input type="text" class="form-control override-searchbar" placeholder="Search Twitter">
 
