@@ -10,7 +10,10 @@ const HelloWorld = () => {
     </Link> |
     <Link to="/build">
         Build
-    </Link>
+    </Link>|
+            <Link to="/allass">
+                All Homework
+            </Link>
         </>
 )
 };

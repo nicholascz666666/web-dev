@@ -1,0 +1,79 @@
+.wd-top {
+    margin-top: 25px;
+}
+
+.btn-primary.override-bs {
+    border-radius: 20px;
+}
+
+
+.input-group-text.override-bs2{
+    background-color: white;
+
+}
+
+.wd-left-home{
+    float: left;
+    position: relative;
+    top:3px;
+}
+
+.wd-float-right{
+    float: right;
+}
+
+.input-group-text.override-bs2.wd-search-icon{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 0px;
+}
+.override-searchbar{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px  !important;
+    border-left: 0px  !important;
+}
+
+.wd-color-blue{
+    color: blue;
+}
+
+.wd-txt-over-image{
+    color: white; font-size: 50px;
+}
+.wd-color-lg{
+    color: darkgray;
+}
+
+
+.wd-logo{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: 5px;
+    border-radius: 70%;
+}
+
+.wd-left-button{
+    min-width: 100%;
+}
+
+.wd-right-font{
+    font-size: 14px;
+}
+
+.wd-right-bold{
+    font-weight: bold;
+}
+
+.wd-bd-r{
+    border-radius: 10px;
+}
+
+.wd-md-img{
+    height: 100px;
+}
+
+.wd-right-check{
+    position: relative;
+    z-index: 10;
+}
