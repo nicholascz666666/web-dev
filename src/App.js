@@ -38,15 +38,15 @@ function App() {
 
     <div className="container">
         <BrowserRouter>
-            <Route path="/hello" exact={true}>
+            <Route path="/a6/hello" exact={true}>
             <HelloWorld/>
             </Route>
 
-            <Route path={["/", "/practice"]} exact={true}>
+            <Route path={["/", "/a6", "/a6/practice"]} exact={true}>
             <Practice/>
             </Route>
 
-            <Route path="/build" exact={true}>
+            <Route path="/a6/build" exact={true}>
             <Build/>
             </Route>
 

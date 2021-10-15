@@ -8,10 +8,10 @@ import TodoList from "./Todo/TodoList";
 const Practice = () => {
     return(
         <>
-            <Link to="/hello">
+            <Link to="/a6/hello">
                 Hello
             </Link> |
-            <Link to="/build">
+            <Link to="/a6/build">
                 Build
             </Link>|
 

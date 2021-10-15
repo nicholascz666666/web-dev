@@ -36,7 +36,7 @@ const ExploreComponent = () => {
               </li>
            </ul>
            <div className="position-relative">
-                    <img src="../../../../../public/a5/twitter/explore/pz.jpg" className="img-fluid" alt="Responsive image"/>
+                    <img src="../Images/pz.jpg" className="img-fluid" alt="Responsive image"/>
                     <span className="text-over-img position-absolute bottom-0 start-0 wd-txt-over-image">SpaceX's Starship</span>
                 </div>
            {PostSummaryList()}
