@@ -1,19 +1,15 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import History from "../history";
+import A6 from "./index";
 
 const HelloWorld = () => {
     return(
         <>
         <h1>Hello World!</h1>
-    <Link to="/a6/practice">
-        Practice
-    </Link> |
-    <Link to="/a6/build">
-        Build
-    </Link>|
-            <Link to="/allass">
-                All Homework
-            </Link>
+
+            <A6/>
+            <hr />
+            <History/>
         </>
 )
 };

@@ -1,6 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index.js";
 
-const ExploreComponent = () => {
+const ExploreComponent = (key) => {
     return(
         <div>
             <div className="row">

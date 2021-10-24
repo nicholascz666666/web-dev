@@ -5,8 +5,8 @@ const PostSummaryList = () => {
     return(
         <ul>
             {
-                posts.map(w => {
-                    return(<PostSummaryItem post={w}/>);
+                posts.map((w,key) => {
+                    return(<PostSummaryItem post={w} key={key}/>);
                 })
             }
         </ul>

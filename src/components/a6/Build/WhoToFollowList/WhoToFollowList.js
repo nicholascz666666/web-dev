@@ -4,8 +4,8 @@ const WhoToFollowList = () => {
     return(
         <ul>
             {
-                whos.map(w => {
-                    return(<WhoToFollowListItem who={w}/>);
+                whos.map((w,key) => {
+                    return(<WhoToFollowListItem who={w} key={key}/>);
                 })
             }
         </ul>

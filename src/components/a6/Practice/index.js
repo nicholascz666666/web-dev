@@ -13,11 +13,8 @@ const Practice = () => {
             </Link> |
             <Link to="/a6/build">
                 Build
-            </Link>|
-
-            <Link to="/allass">
-                All Homework
             </Link>
+
             <div>
                 <h1>Practice</h1>
                 <ConditionalOutput/>
