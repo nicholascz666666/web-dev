@@ -26,7 +26,7 @@ const PostSummaryItem  = (
                                 <img src={post.image} className="wd-bd-r img-fluid" alt="Responsive image"/>
                             </div>
                         </div>
-        </li>
+                        </li>
         );
 }
 export default PostSummaryItem ;

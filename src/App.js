@@ -26,6 +26,15 @@ function App() {
             <Build/>
             </Route>
 
+
+
+            <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
+                <Practice/>
+            </Route>
+
+            <Route path={"/a7/twitter"} component={Build} />
+
+
         </BrowserRouter>
 
     </div>

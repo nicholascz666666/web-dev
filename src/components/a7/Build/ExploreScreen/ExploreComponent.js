@@ -2,9 +2,9 @@ import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = (key) => {
     return(
-        <div className>
+        <div>
             <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div className="input-group mb-3" >
                         <div className="input-group-text override-bs2 wd-search-icon">
                             <i className="fa fa-search wd-color-lg"/>
@@ -38,10 +38,8 @@ const ExploreComponent = (key) => {
            <div className="position-relative">
                     <img src="../Images/pz.jpg" className="img-fluid" alt="Responsive image"/>
                     <span className="text-over-img position-absolute bottom-0 start-0 wd-txt-over-image">SpaceX's Starship</span>
-           </div>
-
+                </div>
            {PostSummaryList()}
-
         </div>
     );
 }

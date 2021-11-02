@@ -3,8 +3,7 @@ import posts from "./posts.json"
 
 const PostSummaryList = () => {
     return(
-
-        <ul style={{"padding-left": "0px"}}>
+        <ul>
             {
                 posts.map((w,key) => {
                     return(<PostSummaryItem post={w} key={key}/>);

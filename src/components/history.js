@@ -25,7 +25,7 @@ const History = () => {
             <ul>
                 <li><a href="/a5/practice/js/index.html">JavaScript & Console Practice</a></li>
                 <li><a href="/a5/practice/todos/index.html">ToDoList Practice</a></li>
-                <li><a href="/a5/build/ExploreScreen/explore.html">A5 Practice ExploreScreen</a></li>
+                <li><a href="/a5/build/ExploreScreen/explore.html">A5 ExploreScreen</a></li>
             </ul>
         </div>
     )
