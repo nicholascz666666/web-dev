@@ -1,31 +1,21 @@
-import React from "react";
+import hello from "./ReduxExamples/reducers/hello";
+import {createStore, combineReducers} from "redux";
+import {Provider} from "react-redux";
+import todos from "./ReduxExamples/reducers/todos";
+import ReduxExamples from "./ReduxExamples/components";
 import {Link} from "react-router-dom";
-import Classes from "./Classes";
-import Styles from "./Styles";
-import ConditionalOutput from "./ConditionalOutput/index";
-import TodoList from "./Todo/TodoList";
+const reducers = combineReducers({hello, todos})
+const store = createStore(reducers);
 
 const Practice = () => {
     return(
-        <>
-            <Link to="/a7/hello">
-                Hello
-            </Link> |
-            <Link to="/a7/build">
-                Build
-            </Link>
-
+        <Provider store={store}>
             <div>
                 <h1>Practice</h1>
-                <ConditionalOutput/>
-                <Styles/>
-                <Classes/>
-                <TodoList/>
+                <Link to="/a7/twitter/home">Build</Link>
+                <ReduxExamples/>
             </div>
-
-
-        </>
-
+        </Provider>
     )
 };
 

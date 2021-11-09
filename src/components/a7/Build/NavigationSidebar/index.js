@@ -2,12 +2,11 @@ import React from "react";
 import '../../../../vendors/font-awesome/css/all.min.css';
 import '../../../../vendors/bootstrap/css/bootstrap.min.css';
 import '../../../../vendors/bootstrap/bootstrap.min.css';
-
+import {Link} from "react-router-dom";
 const NavigationSidebar = (
     {active = 'explore'}) => { return(
 
     <div >
-
 
         <div>
             <ul className="list-group">
@@ -65,17 +64,7 @@ const NavigationSidebar = (
                 Tweet</a>
         </div>
 
-        <Link to="/a7" className="list-group-item">
-            <i className="fab fa-twitter"></i>
-        </Link>
-        <Link to="/a7/twitter/home">
-        <i className="fa fa-home"></i>
-        <span className="d-none d-xl-inline">Home</span>
-    </Link>
-    <Link to="/a7/twitter/explore" >
-    <i className="fa fa-hashtag"></i>
-    <span className="d-none d-xl-inline">Explore</span>
-</Link>
+
 
 
 </div>);

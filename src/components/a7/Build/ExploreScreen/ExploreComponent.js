@@ -1,5 +1,5 @@
 import PostSummaryList from "../PostSummaryList/index.js";
-
+import React from "react";
 const ExploreComponent = (key) => {
     return(
         <div>
@@ -36,7 +36,7 @@ const ExploreComponent = (key) => {
               </li>
            </ul>
            <div className="position-relative">
-                    <img src="../Images/pz.jpg" className="img-fluid" alt="Responsive image"/>
+                    <img src="/Images/pz.jpg" className="img-fluid" alt="Responsive image"/>
                     <span className="text-over-img position-absolute bottom-0 start-0 wd-txt-over-image">SpaceX's Starship</span>
                 </div>
            {PostSummaryList()}
