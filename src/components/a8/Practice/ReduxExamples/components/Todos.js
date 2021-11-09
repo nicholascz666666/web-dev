@@ -37,28 +37,25 @@ const Todos = () => {
         setTodo(temp);
     }
 
-    const uni_key = 0;
-
     return (
         <>
             <h3>Todos</h3>
-            <ul className="list-group" key={uni_key}>
-                <li className="list-group-item" key={uni_key+1}>
-                    <input onChange={todoChangeHandler} value={todo.do} className="form-control" key={uni_key+1}/>
-                    <button onClick={createTodoClickHandler} className="btn btn-primary float-end" key={uni_key+1}>
+            <ul className="list-group">
+                <li className="list-group-item">
+                    <input onChange={todoChangeHandler} value={todo.do} className="form-control"/>
+                    <button onClick={createTodoClickHandler} className="btn btn-primary float-end">
                         Create a Todo
                     </button>
                 </li>
                 {
                     todos.map(todo =>
-                        <li className="list-group-item" key={uni_key+2}>
+                        <li className="list-group-item">
                             <input checked={todo.done}
                                    onChange={(event) =>
                                        updateTodoClickHandler({...todo, done: event.target.checked})}
                                    type="checkbox"/>
                             {todo.do}
-                            <button onClick={() => deleteTodoClickHandler(todo)} className="btn btn-danger float-end"
-                                    key={uni_key+1}>
+                            <button onClick={() => deleteTodoClickHandler(todo)} className="btn btn-danger float-end">
                                 Delete a Todo
                             </button>
                         </li>

@@ -1,4 +1,3 @@
-
 import React from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import {useSelector} from "react-redux";

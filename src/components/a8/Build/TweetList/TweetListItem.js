@@ -11,7 +11,6 @@ const TweetListItem = ({tweet}) => {
     return(
         <li className="list-group-item">
             <table>
-            <tbody>
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image"
@@ -45,7 +44,6 @@ const TweetListItem = ({tweet}) => {
                         <TweetStats tweet={tweet}/>
                     </td>
                 </tr>
-            </tbody>
             </table>
         </li>
     );

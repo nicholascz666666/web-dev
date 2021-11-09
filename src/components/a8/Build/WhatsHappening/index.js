@@ -15,7 +15,6 @@ const WhatsHappening = () => {
     return(
         <>
             <table style={{marginBottom: '16px'}}>
-                <tbody>
                 <tr>
                     <td style={{verticalAlign: 'top'}}>
                         <img src={'/Images/rs.jpg'}
@@ -43,7 +42,6 @@ const WhatsHappening = () => {
                         </button>
                     </td>
                 </tr>
-                </tbody>
             </table>
         </>
     );

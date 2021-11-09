@@ -1,4 +1,3 @@
-import React from "react";
 const WhoToFollowListItem=(
     {
         who = {
@@ -10,7 +9,7 @@ const WhoToFollowListItem=(
 
 )=>{
     return(
-        <li className="list-group-item" key={who.avatarIcon}>
+        <li className="list-group-item">
                     <div className="row">
                         <div className="col-lg-1 col-xl-1 col-xxl-1">
                             <img alt={`${who.userName}-avatar`} src={who.avatarIcon} className="wd-logo"/>

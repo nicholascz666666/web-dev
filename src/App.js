@@ -10,6 +10,7 @@ import A6Build from "./components/a6/Build/Build";
 import A7Practice from "./components/a7/Practice/index";
 import A7Build from "./components/a7/Build/Build";
 import History from "./components/history";
+//import A8Practice from "./components/a8/Practice/index";
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import React from "react";
 
@@ -36,6 +37,10 @@ function App() {
                 <Route path="/history">
                     <History/>
                 </Route>
+
+                {/*<Route path={["/a8", "/a8/practice"]} exact={true}>*/}
+                {/*    <A8Practice/>*/}
+                {/*</Route>*/}
             </div>
             <Link to="/a6/hello">
                 A6Hello And Previous HomeWork |
@@ -50,8 +55,11 @@ function App() {
                 A7 Home |
             </Link>
             <Link to="/a7/twitter/explore">
-                A7 Explore
+                A7 Explore |
             </Link>
+            {/*<Link to="/a8/practice">*/}
+            {/*    A8 Practice |*/}
+            {/*</Link>*/}
         </BrowserRouter>
 
     );
