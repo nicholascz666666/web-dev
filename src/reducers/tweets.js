@@ -2,6 +2,12 @@ import tweets from "../data/tweets.json"
 
 const tweetss = (state = tweets, action) => {
     switch (action.type) {
+        case 'fetch-all-tweets':
+            return({
+                tweets: action.tweets
+            })
+            break;
+
         case 'like-tweet':
             return state.map(tweet => {
                 if(tweet._id === action.tweet._id) {

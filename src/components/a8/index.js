@@ -7,10 +7,10 @@ const A8 = () => {
 
 
             <h2>Assignment 6</h2>
-            <Link to="/a7/practice">
+            <Link to="/a8/practice">
                 Practice
             </Link> | &nbsp;
-            <Link to="/a7/Build">
+            <Link to="/a8/Build">
                 Build
             </Link>
 

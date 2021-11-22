@@ -10,7 +10,8 @@ import A6Build from "./components/a6/Build/Build";
 import A7Practice from "./components/a7/Practice/index";
 import A7Build from "./components/a7/Build/Build";
 import History from "./components/history";
-//import A8Practice from "./components/a8/Practice/index";
+import A8Practice from "./components/a8/Practice/index";
+import A8Build from "./components/a8/Build/Build";
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import React from "react";
 
@@ -38,9 +39,13 @@ function App() {
                     <History/>
                 </Route>
 
-                {/*<Route path={["/a8", "/a8/practice"]} exact={true}>*/}
-                {/*    <A8Practice/>*/}
-                {/*</Route>*/}
+                <Route path={["/a8", "/a8/practice"]} exact={true}>
+                    <A8Practice/>
+                </Route>
+
+                <Route path={["/a8", "/a8/twitter"]} exact={true}>
+                    <A8Build/>
+                </Route>
             </div>
             <Link to="/a6/hello">
                 A6Hello And Previous HomeWork |
@@ -57,9 +62,17 @@ function App() {
             <Link to="/a7/twitter/explore">
                 A7 Explore |
             </Link>
-            {/*<Link to="/a8/practice">*/}
-            {/*    A8 Practice |*/}
-            {/*</Link>*/}
+            <Link to="/a8/practice">
+                A8 Practice |
+            </Link>
+
+            <Link to="/a8/twitter/home">
+                A8 Home |
+            </Link>
+            <Link to="/a8/twitter/explore">
+                A8 Explore |
+            </Link>
+
         </BrowserRouter>
 
     );
