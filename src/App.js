@@ -11,9 +11,13 @@ import A7Practice from "./components/a7/Practice/index";
 import A7Build from "./components/a7/Build/Build";
 import History from "./components/history";
 import A8Practice from "./components/a8/Practice/index";
-import A8Build from "./components/a8/Build/Build";
+import A8Build from "./components/a8/Build"
+
+
+
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import React from "react";
+
 
 function App() {
     return (
@@ -35,17 +39,21 @@ function App() {
                     <A7Build/>
                 </Route>
 
+                <Route path={["/a8/practice"]} exact={true}>
+                    <A8Practice/>
+                </Route>
+
+                <Route path="/a8/twitter">
+                    <A8Build/>
+                </Route>
+
+
+
                 <Route path="/history">
                     <History/>
                 </Route>
 
-                <Route path={["/a8", "/a8/practice"]} exact={true}>
-                    <A8Practice/>
-                </Route>
 
-                <Route path={["/a8", "/a8/twitter"]} exact={true}>
-                    <A8Build/>
-                </Route>
             </div>
             <Link to="/a6/hello">
                 A6Hello And Previous HomeWork |
@@ -70,9 +78,8 @@ function App() {
                 A8 Home |
             </Link>
             <Link to="/a8/twitter/explore">
-                A8 Explore |
+                A8 Explore | Github for server: https://github.com/nicholascz666666/fall21A8cs4550
             </Link>
-
         </BrowserRouter>
 
     );

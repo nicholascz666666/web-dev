@@ -1,13 +1,7 @@
-import tweets from "../data/tweets.json"
+import posts from './data/tweets.json';
 
-const tweetss = (state = tweets, action) => {
+const tweets = (state = posts, action) => {
     switch (action.type) {
-        case 'fetch-all-tweets':
-            return({
-                tweets: action.tweets
-            })
-            break;
-
         case 'like-tweet':
             return state.map(tweet => {
                 if(tweet._id === action.tweet._id) {
@@ -18,13 +12,15 @@ const tweetss = (state = tweets, action) => {
                         tweet.liked = true;
                         tweet.stats.likes++;
                     }
-
+                    return tweet;
+                } else {
+                    return tweet;
                 }
-                return tweet;
             });
 
         case 'delete-tweet':
             return state.filter(tweet => tweet._id !== action.tweet._id);
+
 
         case 'create-tweet':
             const tweet = {
@@ -35,8 +31,8 @@ const tweetss = (state = tweets, action) => {
                 "handle": "ReactJS",
                 "time": "2h",
                 ...action.tweet,
-                "avatar-image": "/Images/react.png",
-                "logo-image": "/Images/rs.jpg",
+                "avatar-image": "../../../Images/rs.jpg",
+                "logo-image": "../../../Images/rs.jpg",
                 "stats": {
                     "comments": 123,
                     "retweets": 234,
@@ -48,10 +44,15 @@ const tweetss = (state = tweets, action) => {
                     ...state,
                 ]
             );
+            break;
+
+        case 'fetch-all-tweets':
+            return action.tweets
+            break;
 
         default:
             return (state);
     }
 };
 
-export default tweetss;
+export default tweets;

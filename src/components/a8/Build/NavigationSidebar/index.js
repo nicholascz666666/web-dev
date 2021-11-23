@@ -64,9 +64,6 @@ const NavigationSidebar = (
                 Tweet</a>
         </div>
 
-
-
-
 </div>);
 };
 

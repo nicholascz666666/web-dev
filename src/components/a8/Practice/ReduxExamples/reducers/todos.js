@@ -13,6 +13,13 @@ const data = [
 
 const todos = (state = data, action) => {
     switch (action.type) {
+        case 'update-todo':
+            const newTodos = state.map(todo => {
+                const newTodo = todo._id === action.todo._id ? action.todo : todo;
+                return newTodo;
+            });
+            return newTodos;
+
         case 'delete-todo':
             return state.filter(todo => todo !== action.todo);
 
@@ -21,22 +28,14 @@ const todos = (state = data, action) => {
                 ...action.todo,
                 _id: (new Date()).getDate() + ""
             };
+
             return [
                 ...state,
                 newTodo
             ]
-
-        case 'update-todo':
-            const newTodos = state.map(todo => {
-                const newTodo = todo._id === action.todo._id ? action.todo : todo;
-                return newTodo;
-            });
-            return newTodos;
-
         default:
             return state;
     }
 }
-
 
 export default todos;

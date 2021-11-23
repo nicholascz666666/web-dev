@@ -1,4 +1,4 @@
-const TWEET_API = 'http://localhost:4000/api/tweets';
+const TWEET_API = 'https://fall21cs4550-a8.herokuapp.com/';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
@@ -43,3 +43,4 @@ export const likeTweet = (dispatch, tweet) =>
                 type: 'like-tweet',
                 tweet
             }));
+

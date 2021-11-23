@@ -31,10 +31,10 @@ const Todos = () => {
 
     const todoChangeHandler = (event) => {
         const doValue = event.target.value;
-        const temp = {
+        const newTodo = {
             do: doValue
         };
-        setTodo(temp);
+        setTodo(newTodo);
     }
 
     return (
@@ -42,23 +42,25 @@ const Todos = () => {
             <h3>Todos</h3>
             <ul className="list-group">
                 <li className="list-group-item">
-                    <input onChange={todoChangeHandler} value={todo.do} className="form-control"/>
-                    <button onClick={createTodoClickHandler} className="btn btn-primary float-end">
-                        Create a Todo
+                    <input onChange={todoChangeHandler}
+                           value={todo.do}
+                           className="form-control"/>
+                    <button onClick={createTodoClickHandler}
+                            className="btn btn-primary">
+                        Create
                     </button>
                 </li>
                 {
                     todos.map(todo =>
-                        <li className="list-group-item">
-                            <input checked={todo.done}
-                                   onChange={(event) =>
-                                       updateTodoClickHandler({...todo, done: event.target.checked})}
-                                   type="checkbox"/>
-                            {todo.do}
-                            <button onClick={() => deleteTodoClickHandler(todo)} className="btn btn-danger float-end">
-                                Delete a Todo
-                            </button>
-                        </li>
+                                  <li className="list-group-item">
+                                      <input checked={todo.done}
+                                             onChange={(event) => updateTodoClickHandler({...todo, done: event.target.checked})}
+                                             type="checkbox"/>
+                                      {todo.do}
+                                      <button onClick={() => deleteTodoClickHandler(todo)} className="btn btn-danger float-end">
+                                          Delete
+                                      </button>
+                                  </li>
                     )
                 }
             </ul>
@@ -66,4 +68,5 @@ const Todos = () => {
     );
 };
 export default Todos;
+
 

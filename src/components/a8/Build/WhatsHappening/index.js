@@ -1,20 +1,21 @@
 
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet, fetchAllTweets} from "../../../../services/tweeter-service";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
-        postNewTweet(dispatch, {
-            tweet: whatsHappening
+        dispatch({type: 'create-tweet',
+            tweet: {
+                tweet: whatsHappening
+            }
         });
-
     }
     return(
         <>
             <table style={{marginBottom: '16px'}}>
+                <tbody>
                 <tr>
                     <td style={{verticalAlign: 'top'}}>
                         <img src={'/Images/rs.jpg'}
@@ -42,6 +43,7 @@ const WhatsHappening = () => {
                         </button>
                     </td>
                 </tr>
+                </tbody>
             </table>
         </>
     );
