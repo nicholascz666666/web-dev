@@ -47,8 +47,6 @@ function App() {
                     <A8Build/>
                 </Route>
 
-
-
                 <Route path="/history">
                     <History/>
                 </Route>

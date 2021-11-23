@@ -20,7 +20,7 @@ const Practice = () => {
                 <Link to="/a8/twitter/home">Build</Link>
                 <MovieApiClient/>
                 <APIExamples/>
-                {/*<ReduxExamples/>*/}
+                <ReduxExamples/>
 
             </div>
         </Provider>
