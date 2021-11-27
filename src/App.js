@@ -12,8 +12,8 @@ import A7Build from "./components/a7/Build/Build";
 import History from "./components/history";
 import A8Practice from "./components/a8/Practice/index";
 import A8Build from "./components/a8/Build"
-
-
+import A9Build from "./a9/Build"
+import A9Practice from "./a9/Practice"
 
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import React from "react";
@@ -47,6 +47,16 @@ function App() {
                     <A8Build/>
                 </Route>
 
+                <Route path="/a9/practice">
+                    <A9Practice/>
+                </Route>
+
+                <Route path="/a9/twitter">
+                    <A9Build/>
+                </Route>
+
+
+
                 <Route path="/history">
                     <History/>
                 </Route>
@@ -76,8 +86,14 @@ function App() {
                 A8 Home |
             </Link>
             <Link to="/a8/twitter/explore">
-                A8 Explore | Github for server: https://github.com/nicholascz666666/fall21A8cs4550
+                A8 Explore | Github for server: https://github.com/nicholascz666666/fall21A8cs4550 |
             </Link>
+
+            <Link to="/a9/practice">A9 Practice |</Link>
+            <Link to="/a9/twitter/home">A9 Home |</Link>
+            <Link to="/a9/twitter/explore">A9 Explore |</Link>
+
+
         </BrowserRouter>
 
     );
