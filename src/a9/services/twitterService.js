@@ -1,4 +1,4 @@
-const TWEET_API = 'https://fall21cs4550-a8.herokuapp.com/';
+const TWEET_API = 'https://fall21cs4550-a8.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
